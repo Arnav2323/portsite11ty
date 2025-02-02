@@ -1,0 +1,16 @@
+body {
+    background-color: #FFFAF0;
+}
+
+.nav {
+    background-color: #EFB036;
+    padding: 2rem 0 2rem 0;
+}
+
+.nav a {
+    padding: 2rem;
+}
+
+.nav a:hover {
+    background-color: #4C7B8B;
+}
