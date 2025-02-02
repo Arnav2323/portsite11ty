@@ -1,16 +1,46 @@
-body {
-    background-color: #FFFAF0;
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.content {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .nav {
+    display: flex;
+    flex-direction: row;
     background-color: #EFB036;
-    padding: 2rem 0 2rem 0;
 }
 
 .nav a {
     padding: 2rem;
+    color: black;
+    text-decoration: none;
 }
 
 .nav a:hover {
     background-color: #4C7B8B;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.profileContainer p {
+    line-height: 1.5;
+    margin-left: 3rem;
+    width: 60%;
+}
+
+.profileContainer img {
+    width: 10%;
 }

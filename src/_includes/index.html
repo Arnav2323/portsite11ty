@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<header>
-    <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
-
-
-    <h1>{{ title }}</h1>
-</header>
-
 <body>
+    <header>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Content in here :) -->
+    <section class="content">
+        <section class="profileContainer">
+            <img src="images/placeholderpfp.svg" alt="profile picture">
+            <p>{{ profileText }}</p>
+        </section>
+
+    </section>
+
+
+
     {{ content }}
 </body>
 
