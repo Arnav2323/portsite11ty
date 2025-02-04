@@ -1,15 +1,19 @@
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+
 export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/styles");
     eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     return {
         dir: {
             input: "src",
             includes: "/_includes",
-            markdownTemplateEngine: "md",
-            htmlTemplateEngine: "njk",
-            pathPrefix: "/portsite11ty/",
-            output: "_site"
-        }
+            output: "_site",
+        },
     }
+}
+
+export const config = {
+    pathPrefix:  "/portsite11ty/",
 }
