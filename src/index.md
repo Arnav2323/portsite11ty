@@ -1,24 +1,26 @@
 ---
-layout: base.html
+layout: base.njk
 title: Arnav - Dev
 profileText: Hey, I'm Arnav! I'm a Junior Software Developer currently working at Radweb. I am also a third-year student at the University of Portsmouth, currently in a placement year.
 ---
 
 <section class="content">
-    <section class="profileContainer">
-        <img src="images/placeholderpfp.svg" alt="profile picture">
-        <p>{{ profileText }}</p>
-    </section>
 
-    <section class="content githubCards">
-        <img class="githubCardLarge"
-                src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Arnav2323&theme=default"
-                alt="github contribution card">
-        <img class="githubCardMedium"
-                src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Arnav2323&theme=default"
-                alt="github top languages by repository card">
-        <img class="githubCardMedium"
-            src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arnav2323&theme=default"
-            alt="github stats card">
-    </section>
+<section class="profileContainer">
+    <img src="images/placeholderpfp.svg" alt="profile picture">
+    <p>{{ profileText }}</p>
+</section>
+
+<section class="content githubCards">
+    <img class="githubCardLarge"
+            src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Arnav2323&theme=default"
+            alt="github contribution card">
+    <img class="githubCardMedium"
+            src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Arnav2323&theme=default"
+            alt="github top languages by repository card">
+    <img class="githubCardMedium"
+        src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arnav2323&theme=default"
+        alt="github stats card">
+</section>
+
 </section>
