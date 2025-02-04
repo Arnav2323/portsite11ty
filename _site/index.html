@@ -20,51 +20,45 @@
     </header>
 
     <section class="content">
-        <section class="profileContainer">
-            <img src="images/placeholderpfp.svg" alt="profile picture">
-            <p>Hey, I'm Arnav! I'm a Junior Software Developer currently working at Radweb. I am also a third-year student at the University of Portsmouth, currently in a placement year.</p>
-        </section>
-
-        <section class="content githubCards">
-            <img class="githubCardLarge"
+    <section class="profileContainer">
+        <img src="images/placeholderpfp.svg" alt="profile picture">
+        <p>Hey, I'm Arnav! I'm a Junior Software Developer currently working at Radweb. I am also a third-year student at the University of Portsmouth, currently in a placement year.</p>
+    </section>
+<p><section class="content githubCards">
+<img class="githubCardLarge"
                 src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Arnav2323&theme=default"
                 alt="github contribution card">
-            <img class="githubCardMedium"
+<img class="githubCardMedium"
                 src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Arnav2323&theme=default"
                 alt="github top languages by repository card">
-            <img class="githubCardMedium"
-                src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arnav2323&theme=default"
-                alt="github stats card">
-        </section>
-
-    </section>
-
+<img class="githubCardMedium"
+            src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arnav2323&theme=default"
+            alt="github stats card">
+</section></p>
+</section>
 
 
+    <script>
+        const navBar = document.querySelector(".nav");
+        const toggleNavButton = document.querySelector(".toggleNav");
     
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 1000) {
+                navBar.classList.add("hide")
+            } else {
+                navBar.classList.remove("hide")
+            }
+        });
+    
+        toggleNavButton.addEventListener("click", () => {
+            if (navBar.classList.contains("hide")) {
+                toggleNavButton.textContent = "-";
+                navBar.classList.remove("hide");
+            } else {
+                toggleNavButton.textContent = "+";
+                navBar.classList.add("hide");
+            }
+        });
+    </script>
 </body>
-
-<script>
-    const navBar = document.querySelector(".nav");
-    const toggleNavButton = document.querySelector(".toggleNav");
-
-    window.addEventListener("resize", () => {
-        if (window.innerWidth <= 1000) {
-            navBar.classList.add("hide")
-        } else {
-            navBar.classList.remove("hide")
-        }
-    });
-
-    toggleNavButton.addEventListener("click", () => {
-        if (navBar.classList.contains("hide")) {
-            toggleNavButton.textContent = "-";
-            navBar.classList.remove("hide");
-        } else {
-            toggleNavButton.textContent = "+";
-            navBar.classList.add("hide");
-        }
-    });
-</script>
-
 </html>
