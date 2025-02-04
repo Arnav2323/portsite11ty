@@ -7,6 +7,6 @@
 - Skills Page
 - Projects Page
 - Contact Page
-
-### Maybe:
 - Blog Page
+
+### Maybe
