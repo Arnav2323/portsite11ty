@@ -1,6 +1,6 @@
 export default function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy({"**/*.css": "styles"});
-    eleventyConfig.addPassthroughCopy({"**/*.svg": "images"})
+    eleventyConfig.addPassthroughCopy({"styles/*.css": "styles"});
+    eleventyConfig.addPassthroughCopy({"images/*.svg": "images"})
 
     return {
         dir: {
