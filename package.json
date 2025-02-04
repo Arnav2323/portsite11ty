@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "npm run prebuild && npx @11ty/eleventy --serve",
+    "serve": "npx @11ty/eleventy --serve",
     "prebuild": "rd /s /q _site && mkdir _site",
-    "build": "npm run prebuild && eleventy",
+    "build": "npx @11ty/eleventy",
     "dryrun": "eleventy --dryrun",
     "buildLinux": "npx @11ty/eleventy"
   },

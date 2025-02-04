@@ -5,6 +5,10 @@ export default function (eleventyConfig) {
     return {
         dir: {
             input: "src",
+            includes: "/_includes",
+            markdownTemplateEngine: "md",
+            htmlTemplateEngine: "njk",
+            pathPrefix: "/portsite11ty/",
             output: "_site"
         }
     }
