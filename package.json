@@ -9,7 +9,7 @@
     "prebuild": "rd /s /q _site && mkdir _site",
     "build": "npx @11ty/eleventy",
     "dryrun": "eleventy --dryrun",
-    "buildLinux": "env NODE_ENV=production npx eleventy --pathprefix 'portsite11ty'",
+    "buildLinux": "env NODE_ENV=production npx eleventy --pathprefix 'portsite11ty'"
   },
   "keywords": [],
   "author": "",
