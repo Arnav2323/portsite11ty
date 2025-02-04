@@ -1,4 +1,4 @@
-import { EleventyHtmlBasePlugin } from "11ty/eleventy";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/styles");
