@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #EFB036;
+}
+
+.nav a {
+    padding: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #4C7B8B;
+}
+
+.toggleNav {
+    display: none;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #EFB036;
+    color: black
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.profileContainer p {
+    line-height: 1.5;
+    margin-left: 5rem;
+    width: 60%;
+}
+
+.profileContainer img {
+    width: 20%;
+}
+
+.githubCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.githubCardLarge {
+    width: 100%;
+}
+
+.githubCardMedium {
+    width: 49%;
+}
+
+.skill {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding: 2rem;
+    overflow: auto;
+    width: 15%;
+    border: solid black 2px;
+    border-radius: 1rem;
+}
+
+.skill h1 {
+    margin-bottom: 1rem;
+}
+
+.skill ul {
+    overflow: auto;
+    list-style-type: "> ";
+}
+
+.skill img {
+    float: left;
+    margin-right: 2rem;
+    width: 30%;
+}
+
+.skills h1 {
+    font-size: 32px;
+}
+
+.skillsDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.skillsDisplay a {
+    text-decoration: none;
+    width: 10vw;
+    text-align: center;
+    border: solid black;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profileContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profileContainer img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .profileContainer p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        padding: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    .toggleNav {
+        display: flex
+    }
+
+    .githubCards {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .githubCardLarge {
+        width: 100%;
+    }
+
+    .githubCardMedium {
+        width: 45%;
+    }
+
+    .skillsDisplay {
+        flex-direction: column;
+        height: 100vw;
+    }
+
+    .skillsDisplay a {
+        width: 80vw;
+        margin-bottom: 3rem;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .skill h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill img {
+        float: left;
+        margin-right: 0;
+        width: 50%;
+    }
+}
