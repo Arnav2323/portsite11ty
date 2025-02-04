@@ -2,9 +2,11 @@
 
 ### Live
 - Home Page
+- Skills Page
+  - Speed run added this in after work (probably a bunch of broken/borked stuff that ill fix on weekend)
 
 ### Coming Soon: 
-- Skills Page
+
 - Projects Page
 - Contact Page
 - Blog Page
