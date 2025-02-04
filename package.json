@@ -8,7 +8,8 @@
     "serve": "npm run prebuild && npx @11ty/eleventy --serve",
     "prebuild": "rd /s /q _site && mkdir _site",
     "build": "npm run prebuild && eleventy",
-    "dryrun": "eleventy --dryrun"
+    "dryrun": "eleventy --dryrun",
+    "buildLinux": "rm -r _site && mkdir _site"
   },
   "keywords": [],
   "author": "",
