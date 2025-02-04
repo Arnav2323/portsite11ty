@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnav - Dev</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
     <header>
         <a class="toggleNav" href="#">+</a>
         <nav class="nav">
-            <a href="./index">Home</a>
-            <a href="./index">Skills</a>
-            <a href="./index">Projects</a>
-            <a href="./index">Contact</a>
+            <a href="/">Home</a>
+            <a href="/skills">Skills</a>
+            <a href="/">Projects</a>
+            <a href="/">Contact</a>
         </nav>
     </header>
 
-    <section class="content">
+    <div class="content">
+        
 <section class="profileContainer">
     <img src="images/placeholderpfp.svg" alt="profile picture">
-    <p>Hey, I'm Arnav! I'm a Junior Software Developer currently working at Radweb. I am also a third-year student at the University of Portsmouth, currently in a placement year. BIG TEXT</p>
+    <p>Hey, I&#39;m Arnav! I&#39;m a Junior Software Developer currently working at Radweb. I am also a third-year student at the University of Portsmouth, currently in a placement year.</p>
 </section>
-<section class="content githubCards">
+
+<section class="githubCards">
     <img class="githubCardLarge"
             src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Arnav2323&theme=default"
             alt="github contribution card">
@@ -35,18 +37,33 @@
         src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arnav2323&theme=default"
         alt="github stats card">
 </section>
-</section>
+
+    </div>
 
 
     <script>
         const navBar = document.querySelector(".nav");
         const toggleNavButton = document.querySelector(".toggleNav");
+
+        window.addEventListener("load", ()=> {
+            if (window.innerWidth == null) {
+                setTimeout(1000, () => handleInitialWidthAssignment);
+                return;
+            }
+            handleInitialWidthAssignment();
+        })
+
+        function handleInitialWidthAssignment() {
+            if (window.innerWidth <= 1000) {
+                navBar.classList.add("hide");
+            }
+        }
     
         window.addEventListener("resize", () => {
-            if (window.innerWidth <= 1000) {
-                navBar.classList.add("hide")
+            if (window.width <= 1000) {
+                navBar.classList.add("hide");
             } else {
-                navBar.classList.remove("hide")
+                navBar.classList.remove("hide");
             }
         });
     

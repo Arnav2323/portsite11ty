@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Arnav - Dev
+---
+
+<div class="skillsDisplay">
+    {% for skill in collections.skills %}
+        <a href="{{skill.data.page.url}}" class="skills"><h1>{{ skill.data.skill }}</h1></a>
+        
+    {% endfor %}
+</div>
