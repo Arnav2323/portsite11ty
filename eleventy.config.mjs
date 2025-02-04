@@ -1,6 +1,6 @@
 export default function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy({"styles/index.css": "styles"});
-    eleventyConfig.addPassthroughCopy({"images/placeholderpfp.svg": "images"})
+    eleventyConfig.addPassthroughCopy({"src/styles/index.css": "styles"});
+    eleventyConfig.addPassthroughCopy({"src/images/placeholderpfp.svg": "images"})
 
     return {
         dir: {
