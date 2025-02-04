@@ -11,7 +11,7 @@
 <body>
     <header>
         <a class="toggleNav" href="#">+</a>
-        <nav class="nav hide">
+        <nav class="nav">
             <a href="./index">Home</a>
             <a href="./index">Skills</a>
             <a href="./index">Projects</a>
@@ -48,13 +48,21 @@
     const navBar = document.querySelector(".nav");
     const toggleNavButton = document.querySelector(".toggleNav");
 
+    window.addEventListener("resize", () => {
+        if (window.innerWidth <= 1000) {
+            navBar.classList.add("hide")
+        } else {
+            navBar.classList.remove("hide")
+        }
+    });
+
     toggleNavButton.addEventListener("click", () => {
-        if (navBar.classList.contains('hide')) {
+        if (navBar.classList.contains("hide")) {
             toggleNavButton.textContent = "-";
-            navBar.classList.remove('hide');
+            navBar.classList.remove("hide");
         } else {
             toggleNavButton.textContent = "+";
-            navBar.classList.add('hide');
+            navBar.classList.add("hide");
         }
     });
 </script>
