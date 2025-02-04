@@ -9,7 +9,7 @@
     "prebuild": "rd /s /q _site && mkdir _site",
     "build": "npm run prebuild && eleventy",
     "dryrun": "eleventy --dryrun",
-    "buildLinux": "rm -r _site && mkdir _site && eleventy"
+    "buildLinux": "rm -r _site && mkdir _site && npx eleventy"
   },
   "keywords": [],
   "author": "",
