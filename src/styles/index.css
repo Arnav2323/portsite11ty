@@ -34,7 +34,8 @@ header {
     background-color: #4C7B8B;
 }
 
-.toggleNav {
+.toggleNavButton {
+    display: none;
     align-items: center;
     text-decoration: none;
     padding: 1rem;
@@ -167,7 +168,7 @@ header {
         text-decoration: none;
     }
 
-    .toggleNav {
+    .toggleNavButton {
         display: flex
     }
 
