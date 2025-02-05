@@ -28,15 +28,16 @@
         const navBar = document.querySelector(".nav");
         const toggleNavButton = document.querySelector(".toggleNavButton");
 
+
         window.addEventListener("load", ()=> {
             if (window.innerWidth == null) {
                 setTimeout(1000, () => handleInitialWidthAssignment);
                 return;
             }
-            handleInitialWidthAssignment();
+            hideMobileDropdown();
         })
 
-        function handleInitialWidthAssignment() {
+        function hideMobileDropdown() {
             if (window.innerWidth <= 1000) {
                 navBar.classList.add("hide");
             }
@@ -58,6 +59,12 @@
                 toggleNavButton.textContent = "+";
                 navBar.classList.add("hide");
             }
+        });
+
+
+        // Weird fix long time bad
+        window.navigation.addEventListener("navigate", ()=> {
+            handleInitialWidthAssignment();
         });
     </script>
 </body>
