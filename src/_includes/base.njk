@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href={{ "/styles/index.cs" | url }}>
+    <link rel="stylesheet" href={{ "/styles/index.cs" | htmlBaseUrl }}>
 </head>
 
 <body>
     <header>
         <a class="toggleNav" href="#">+</a>
         <nav class="nav">
-            <a href={{"/index/" | url }}>Home</a>
-            <a href={{"/skills/" | url }}>Skills</a>
-            <a href={{"/index/" | url }}>Projects</a>
-            <a href={{"/index/" | url }}>Contact</a>
+            <a href={{"/index/" | htmlBaseUrl }}>Home</a>
+            <a href={{"/skills/" | htmlBaseUrl }}>Skills</a>
+            <a href={{"/index/" | htmlBaseUrl }}>Projects</a>
+            <a href={{"/index/" | htmlBaseUrl }}>Contact</a>
         </nav>
     </header>
 
