@@ -11,6 +11,6 @@ export default function (eleventyConfig) {
             includes: "_includes",
             output: "_site",
         },
-        pathPrefix: "/portsite11ty/",
+        pathPrefix: "/",
     }
 }
