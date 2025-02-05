@@ -8,7 +8,7 @@
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "dryrun": "eleventy --dryrun",
-    "buildLinux": "env NODE_ENV=production npx eleventy --pathprefix 'portsite11ty'",
+    "buildLinux": "env NODE_ENV=production npx eleventy",
     "mkdirSite": "mkdir _site"
   },
   "keywords": [],
