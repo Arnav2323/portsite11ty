@@ -4,6 +4,10 @@
     font-size: 24px;
 }
 
+header {
+    margin-bottom: 2rem;
+}
+
 .hide {
     display: none !important;
 }
@@ -31,12 +35,11 @@
 }
 
 .toggleNav {
-    display: none;
     align-items: center;
     text-decoration: none;
     padding: 1rem;
     background-color: #EFB036;
-    color: black
+    color: black;
 }
 
 .profileContainer {
@@ -117,8 +120,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
-    height: 80vh;
+    overflow: visible;
+    height: 60vh;
 }
 
 .skillsDisplay a {
@@ -190,7 +193,6 @@
 
     .skillsDisplay {
         flex-direction: column;
-        height: 100vw;
     }
 
     .skillsDisplay a {
@@ -202,7 +204,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        /* Default header margin pushes this down enough (2rem) */
+        margin-top: 0;
+        padding: 1rem;
+        width: 75%;
     }
 
     .skill h1 {
