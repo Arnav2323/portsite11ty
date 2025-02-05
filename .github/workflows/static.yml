@@ -35,15 +35,15 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Make Directory
         run: mkdir ./_site
+      - name: Install Deps & Build
+        run: |
+          npm ci
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: './_site'
-      - name: Install Deps & Build
-        run: |
-          npm ci
-          npm run build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
