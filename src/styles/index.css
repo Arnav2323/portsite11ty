@@ -1,3 +1,8 @@
+:root {
+    --main-orange: #EFB036;
+    --main-blue: #4C7B8B;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +26,7 @@ header {
 .nav {
     display: flex;
     flex-direction: row;
-    background-color: #EFB036;
+    background-color: var(--main-orange);
 }
 
 .nav a {
@@ -126,12 +131,17 @@ header {
 }
 
 .skillsDisplay a {
+    color: black;
     text-decoration: none;
     width: 10vw;
     text-align: center;
-    border: solid black;
     border-radius: 0.2rem;
     margin-right: 1rem;
+    background-color: var(--main-orange);
+}
+
+.skillsDisplay a:hover {
+    background-color: var(--main-blue);
 }
 
 @media (max-width: 1000px) {
@@ -160,16 +170,17 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .nav a {
-        padding: 1rem;
+        width: 100%;
         color: black;
         text-decoration: none;
     }
 
     .toggleNavButton {
-        display: flex
+        display: flex;
     }
 
     .githubCards {
