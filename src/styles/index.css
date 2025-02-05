@@ -87,7 +87,7 @@ header {
 }
 
 .githubCardMedium {
-    width: 49%;
+    width: 45%;
 }
 
 .skill {
@@ -193,14 +193,6 @@ header {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .githubCardLarge {
-        width: 100%;
-    }
-
-    .githubCardMedium {
-        width: 45%;
     }
 
     .skillsDisplay {
