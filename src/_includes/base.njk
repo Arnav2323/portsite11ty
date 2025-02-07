@@ -35,22 +35,14 @@
                 return;
             }
             hideMobileDropdown();
-        })
+        });
 
         function hideMobileDropdown() {
             if (window.innerWidth <= 1000) {
                 navBar.classList.add("hide");
             }
         }
-    
-        window.addEventListener("resize", () => {
-            if (window.width <= 1000) {
-                navBar.classList.add("hide");
-            } else {
-                navBar.classList.remove("hide");
-            }
-        });
-    
+        
         toggleNavButton.addEventListener("click", () => {
             if (navBar.classList.contains("hide")) {
                 toggleNavButton.textContent = "-";
@@ -59,13 +51,8 @@
                 toggleNavButton.textContent = "+";
                 navBar.classList.add("hide");
             }
-        });
-
-
-        // Weird fix long time bad
-        window.navigation.addEventListener("navigate", ()=> {
-            hideMobileDropdown();
-        });
+            });  
+        
     </script>
 </body>
 </html>
