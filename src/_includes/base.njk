@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css" type="text/css">
+    <script type="text/javascript" src="/scripts/index.js"></script>
 </head>
 
 <body>
@@ -25,33 +26,7 @@
 
 
     <script>
-        const navBar = document.querySelector(".nav");
-        const toggleNavButton = document.querySelector(".toggleNavButton");
-
-
-        window.addEventListener("load", ()=> {
-            if (window.innerWidth == null) {
-                setTimeout(1000, () => handleInitialWidthAssignment);
-                return;
-            }
-            hideMobileDropdown();
-        });
-
-        function hideMobileDropdown() {
-            if (window.innerWidth <= 1000) {
-                navBar.classList.add("hide");
-            }
-        }
         
-        toggleNavButton.addEventListener("click", () => {
-            if (navBar.classList.contains("hide")) {
-                toggleNavButton.textContent = "-";
-                navBar.classList.remove("hide");
-            } else {
-                toggleNavButton.textContent = "+";
-                navBar.classList.add("hide");
-            }
-            });  
         
     </script>
 </body>
