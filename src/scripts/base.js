@@ -10,30 +10,16 @@ window.addEventListener("load", ()=> {
     elems.navBar = document.querySelector(".nav");
     elems.toggleNavButton = document.querySelector(".toggleNavButton");
 
-    // Navbar Sizing
-    if (window.innerWidth == null) {
-        setTimeout(1000, () => handleInitialWidthAssignment);
-        return;
-    }
-    hideMobileDropdown();
-
-
     // Event Listeners
     elems.toggleNavButton.addEventListener("click", () => {
-        if (elems.navBar.classList.contains("hide")) {
+        if (elems.navBar.classList.contains("hideMobileNav")) {
             elems.toggleNavButton.textContent = "-";
-            elems.navBar.classList.remove("hide");
+            elems.navBar.classList.remove("hideMobileNav");
         } else {
             elems.toggleNavButton.textContent = "+";
-            elems.navBar.classList.add("hide");
+            elems.navBar.classList.add("hideMobileNav");
         }
     });    
 });
-
-function hideMobileDropdown() {
-    if (window.innerWidth <= 1000) {
-        elems.navBar.classList.add("hide");
-    }
-}
 
    
