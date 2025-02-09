@@ -4,11 +4,18 @@ layout: base.njk
 
 <article class="skill">
     <img src={{imgSrc}} alt="picture of programming skills" />
-    <h1>{{ skill }}</h1>
-    <ul>
-        <li>Expirience: {{ expr }}</li>
-        <li>Confidence: {{ conf }}</li>
-        <li>Projects: {{ proj }}</li>
-    </ul>
-    {{ content | safe}}
+
+    <div>
+        <h1>{{ skill }}</h1>
+        <ul>
+            <li>Expirience: {{ expr }}</li>
+            <li>Confidence: {{ conf }}</li>
+            <li>Projects: {{ proj }}</li>
+        </ul>
+
+        <div class="skillBody">
+            {{ content | safe}}
+        </div>
+            
+    </div>
 </article>

@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     font-size: 24px;
+    line-height: 1.5rem;
 }
 
 header {
@@ -89,30 +90,29 @@ header {
 }
 
 .skill {
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
-    padding: 2rem;
-    overflow: auto;
-    max-width: 60%;
-    border: solid black 2px;
-    border-radius: 1rem;
 }
 
 .skill h1 {
+    font-size: 32px;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .skill ul {
     overflow: auto;
-    list-style-type: "> ";
 }
 
 .skill img {
-    float: left;
-    margin-right: 2rem;
-    width: 30%;
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.skillBody {
+    margin-top: 2rem;
 }
 
 .skills h1 {
@@ -222,8 +222,6 @@ header {
     }
 
     .skill img {
-        float: left;
-        margin-right: 0;
-        width: 50%;
+        display: none;
     }
 }
