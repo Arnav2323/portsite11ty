@@ -230,7 +230,7 @@ header {
         /* Default header margin pushes this down enough (2rem) */
         margin-top: 0;
         padding: 1rem;
-        width: 75%;
+        width: auto;
     }
 
     .skill h1 {
