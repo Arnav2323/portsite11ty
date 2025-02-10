@@ -133,8 +133,9 @@ header {
 .skillsDisplay a {
     color: black;
     text-decoration: none;
-    width: 10vw;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 0.2rem;
     margin-right: 1rem;
     background-color: var(--main-orange);
