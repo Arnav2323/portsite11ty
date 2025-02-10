@@ -18,6 +18,7 @@ header {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .nav {
@@ -26,6 +27,7 @@ header {
     flex-direction: row;
     background-color: var(--main-orange);
     height: auto;
+    width: 100%;
 }
 
 .nav a {
@@ -143,12 +145,20 @@ header {
 }
 
 @media (max-width: 1000px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
     .hideMobileNav {
         height: 0px;
     }
 
     .content {
         width: 95%;
+        overflow: hidden;
         margin-left: auto;
         margin-right: auto;
     }
@@ -199,10 +209,16 @@ header {
 
     .skillsDisplay {
         flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
     }
 
     .skillsDisplay a {
-        width: 80vw;
+        width: 100%;
+        padding: 3rem;
+        margin-right: 0;
         margin-bottom: 3rem;
     }
 
