@@ -12,15 +12,19 @@
 }
 
 .skill ul {
+    margin-top: 1.5rem;
     overflow: auto;
 }
 
 .skill img {
-    max-width: 50%;
+    max-width: 45%;
     object-fit: contain;
+    margin-right: 1rem;
 }
 
 .skillBody {
+    border-left: solid 5px var(--main-orange);
+    padding: 1rem;
     margin-top: 2rem;
 }
 
