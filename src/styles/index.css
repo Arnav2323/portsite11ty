@@ -123,7 +123,9 @@ header {
 
     .profileContainer p {
         width: 100%;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .nav {
