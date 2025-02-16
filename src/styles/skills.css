@@ -1,0 +1,89 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill h1 {
+    font-size: 32px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill ul {
+    overflow: auto;
+}
+
+.skill img {
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.skillBody {
+    margin-top: 2rem;
+}
+
+.skills h1 {
+    font-size: 32px;
+}
+
+.skillsDisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    height: 60vh;
+}
+
+.skillsDisplay a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+    background-color: var(--main-orange);
+}
+
+.skillsDisplay a:hover {
+    background-color: var(--main-blue);
+}
+
+@media (max-width: 1000px) {
+    .skillsDisplay {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .skillsDisplay a {
+        width: 100%;
+        padding: 3rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Default header margin pushes this down enough (2rem) */
+        margin-top: 0;
+        padding: 1rem;
+        width: auto;
+    }
+
+    .skill h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .skill img {
+        display: none;
+    }
+}
