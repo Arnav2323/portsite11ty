@@ -1,23 +1,20 @@
 "use strict";
 
-let elems = {
-    navBar: null,
-    toggleNavButton: null
-}
 
 window.addEventListener("load", ()=> {
     //Query Selectors
-    elems.navBar = document.querySelector(".nav");
-    elems.toggleNavButton = document.querySelector(".toggleNavButton");
+    const navBar = document.querySelector(".nav");
+    const toggleNavButton = document.querySelector(".toggleNavButton");
+    const icon = document.querySelector("#menuOpenCloseImg");
 
     // Event Listeners
-    elems.toggleNavButton.addEventListener("click", () => {
-        if (elems.navBar.classList.contains("hideMobileNav")) {
-            elems.toggleNavButton.textContent = "-";
-            elems.navBar.classList.remove("hideMobileNav");
+    toggleNavButton.addEventListener("click", () => {
+        if (navBar.classList.contains("hideMobileNav")) {
+            icon.setAttribute("src", "/images/closemenu.svg");
+            navBar.classList.remove("hideMobileNav");
         } else {
-            elems.toggleNavButton.textContent = "+";
-            elems.navBar.classList.add("hideMobileNav");
+            icon.setAttribute("src", "/images/openmenu.svg");
+            navBar.classList.add("hideMobileNav");
         }
     });    
 });

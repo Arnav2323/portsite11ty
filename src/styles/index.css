@@ -50,6 +50,10 @@ header {
     color: black;
 }
 
+#menuOpenCloseImg {
+    max-width: 2rem;
+}
+
 .profileContainer {
     display: flex;
     flex-direction: row;
