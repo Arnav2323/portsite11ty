@@ -1,6 +1,9 @@
 :root {
     --main-orange: #EFB036;
     --main-blue: #4C7B8B;
+
+    --dark-mode-background: #181C14;
+    --dark-mode-color: #FFFFFF;
 }
 
 * {
@@ -9,6 +12,11 @@
     font-size: 24px;
     font-family: OpenDyslexicMono, Consolas, 'Courier New', monospace;
     line-height: 1.5rem;
+}
+
+.darkMode {
+    background-color: var(--dark-mode-background);
+    color: var(--dark-mode-color);
 }
 
 header {
@@ -41,16 +49,16 @@ header {
     background-color: #4C7B8B;
 }
 
-.toggleNavButton {
+#toggleNavButton {
     display: none;
-    align-items: center;
-    text-decoration: none;
-    padding: 1rem;
-    background-color: #EFB036;
-    color: black;
 }
 
-#menuOpenCloseImg {
+#toggleTheme {
+    margin: 0.5rem 0.5rem 0 0;
+    float: right;
+}
+
+.icon {
     max-width: 2rem;
 }
 
@@ -145,8 +153,12 @@ header {
         text-decoration: none;
     }
 
-    .toggleNavButton {
+    #toggleNavButton {
         display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #EFB036;
+        color: black;
     }
 
     .githubCards {
