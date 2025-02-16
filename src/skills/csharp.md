@@ -1,7 +1,6 @@
 ---
 skill: "C#"
 expr: "1 - 2 Years"
-conf: "3/5"
 proj: "None released"
 imgSrc: "/images/csharp.png"
 ---
