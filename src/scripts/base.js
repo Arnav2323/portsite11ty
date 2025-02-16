@@ -19,6 +19,7 @@ window.addEventListener("load", ()=> {
     // Set saved options
     if (localStorage.getItem('theme') === Theme.dark) {
         body.classList.add('darkMode');
+        toggleThemeIcon.setAttribute("src", "/images/lightmode.svg");
     }
 
     // Event Listeners
