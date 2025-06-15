@@ -16,11 +16,17 @@ window.addEventListener("load", ()=> {
     const toggleThemeIcon = document.querySelector("#themeImage");
     const body = document.querySelector("#body");
 
+    // If no option set grab from system and set in storage
+    if (localStorage.getItem('theme') == null) {
+        const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+        localStorage.setItem('theme', isSystemDark ? Theme.dark : Theme.light)
+    }
+
     // Set saved options
     if (localStorage.getItem('theme') === Theme.dark) {
         body.classList.add('darkMode');
         toggleThemeIcon.setAttribute("src", "/images/lightmode.svg");
-    }
+    } 
 
     // Event Listeners
     // Move all this stuff into seperate functions to neaten this file up (tmmr morn before work)
