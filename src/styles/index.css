@@ -91,6 +91,7 @@ header {
 
 .profileContainer img {
     width: 20%;
+    border-radius: 100%;
 }
 
 .githubCards {
