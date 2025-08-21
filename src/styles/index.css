@@ -43,7 +43,7 @@ h2 {
     /* Random number I pulled outta my .... brain... */
     font-size: 40px;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 h2:hover {
@@ -86,13 +86,13 @@ header {
 }
 
 .aboutMeP {
-    max-width: 50%;
+    max-width: 600px;
     text-align: center;
     align-self: center;
 }
 
 .skills {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +136,7 @@ a:active {
     }
 
     .aboutMeP {
-        max-width: 70%;
+        max-width: 600px;
         text-align: center;
         align-self: center;
     }
