@@ -135,6 +135,20 @@ a:active {
         line-height: 1.5rem;
     }
 
+    h1 {
+        /* Random number I pulled outta my .... brain... */
+        font-size: 60px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        /* Random number I pulled outta my .... brain... */
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
     .aboutMeP {
         max-width: 600px;
         text-align: center;
