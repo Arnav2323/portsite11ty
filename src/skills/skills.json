@@ -1,4 +1,3 @@
 {
-    "layout": "skill.njk",
-    "tags": "skills"
+    "layout": "skill.njk"
 }

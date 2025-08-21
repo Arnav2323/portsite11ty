@@ -7,11 +7,7 @@ const Theme = {
 }
 
 window.addEventListener("load", ()=> {
-    //Query Selectors
-    const navBar = document.querySelector(".nav");
-    const toggleNavButton = document.querySelector("#toggleNavButton");
-    const navbarToggleIcon = document.querySelector("#menuOpenCloseImg");
-
+ 
     const toggleTheme = document.querySelector("#toggleTheme");
     const toggleThemeIcon = document.querySelector("#themeImage");
     const body = document.querySelector("#body");
@@ -27,18 +23,6 @@ window.addEventListener("load", ()=> {
         body.classList.add('darkMode');
         toggleThemeIcon.setAttribute("src", "/images/lightmode.svg");
     } 
-
-    // Event Listeners
-    // Move all this stuff into seperate functions to neaten this file up (tmmr morn before work)
-    toggleNavButton.addEventListener("click", () => {
-        if (navBar.classList.contains("hideMobileNav")) {
-            navbarToggleIcon.setAttribute("src", "/images/closemenu.svg");
-            navBar.classList.remove("hideMobileNav");
-        } else {
-            navbarToggleIcon.setAttribute("src", "/images/openmenu.svg");
-            navBar.classList.add("hideMobileNav");
-        }
-    });
     
     toggleTheme.addEventListener("click", ()=> {
         if (body.classList.contains('darkMode')) {

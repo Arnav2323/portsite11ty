@@ -1,19 +1,15 @@
---- 
+---
 layout: base.njk
 ---
 
-<article class="skill">
-    <img src={{imgSrc}} alt="picture of programming skills" />
-
-    <div>
-        <ul>
-            <li>Experience: {{ expr }}</li>
-            <li>Projects: {{ proj }}</li>
-        </ul>
-
-        <div class="skillBody">
-            {{ content | safe}}
-        </div>
-            
-    </div>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="content">
+    {{ content | safe}}
+</body>
+</html>

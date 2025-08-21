@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="/styles/index.css" type="text/css">
     <link rel="stylesheet" href="/styles/skills.css" type="text/css">
     <script type="text/javascript" src="/scripts/base.js"></script>
+    <script src="https://kit.fontawesome.com/696699ab6c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <header>
-        <a id="toggleNavButton" href="javascript:void(0)"><img id="menuOpenCloseImg" class="icon" src="/images/openmenu.svg" alt="menu open close button icon"></a>
-        <nav class="hideMobileNav nav">
-            <a href="/">Home</a>
-            <a href="/skills">Skills</a>
-            <a href="/">Projects (Coming Soon)</a>
-            <a href="/">Contact (Coming Soon)</a>
-        </nav>
         <a id="toggleTheme" href="javascript:void(0)"><img id="themeImage" class="icon" src="/images/darkmode.svg" alt="button to change websites theme"></a>
+        <section class="headerSocial">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/arnav-sharma-3a203b29b"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </section>
     </header>
 
     <div class="content">
+        <h1 class="title">ArnavDev</h1>
         {{ content | safe }}
     </div>
 
@@ -32,4 +32,8 @@
         
     </script>
 </body>
+
+<footer>
+    
+</footer>
 </html>

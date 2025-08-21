@@ -10,7 +10,6 @@
     padding: 0;
     margin: 0;
     font-size: 24px;
-    font-family: OpenDyslexicMono, Consolas, 'Courier New', monospace;
     line-height: 1.5rem;
 }
 
@@ -25,13 +24,48 @@ body {
     }
 }
 
+h1 {
+    /* Random number I pulled outta my .... brain... */
+    font-size: 80px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1:hover {
+    color: fuchsia;
+}
+
+h1:active {
+    color: deeppink;
+}
+
+h2 {
+    /* Random number I pulled outta my .... brain... */
+    font-size: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2:hover {
+    color: fuchsia;
+}
+
+h2:active {
+    color: deeppink;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
 .darkMode {
     background-color: var(--dark-mode-background);
     color: var(--dark-mode-color);
 }
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .content {
@@ -41,79 +75,56 @@ header {
     overflow: hidden;
 }
 
-.nav {
-    display: flex;
-    overflow: clip;
-    flex-direction: row;
-    background-color: var(--main-orange);
-    height: auto;
-    width: 100%;
-}
-
-.nav a {
-    padding: 1rem;
-    color: black;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    background-color: #4C7B8B;
-}
-
-#toggleNavButton {
-    display: none;
-}
-
-#toggleTheme {
-    margin: 0.5rem 0.5rem 0 0;
-    float: right;
-}
-
 .icon {
+    margin: 1rem;
     max-width: 2rem;
 }
 
-.profileContainer {
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMeP {
+    max-width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+.skills {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.headerSocial {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-top: 2rem;
 }
 
-.profileContainer p {
-    line-height: 1.5;
-    margin-left: 5rem;
-    width: 60%;
+.headerSocial ul {
+    list-style: none;
 }
 
-.profileContainer img {
-    width: 20%;
-    border-radius: 100%;
+a:link,
+a:visited {
+    color: inherit;
 }
 
-.githubCards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 2rem;
-    column-gap: 1rem;
-    margin-top: 5rem;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    align-items: center;
+a:hover {
+    color: fuchsia;
 }
 
-.githubCardLarge {
-    width: 100%;
-}
-
-.githubCardMedium {
-    width: 45%;
+a:active {
+    color: deeppink;
 }
 
 @media (max-width: 1000px) {
@@ -124,8 +135,10 @@ header {
         line-height: 1.5rem;
     }
 
-    .hideMobileNav {
-        height: 0px;
+    .aboutMeP {
+        max-width: 70%;
+        text-align: center;
+        align-self: center;
     }
 
     .content {
@@ -133,36 +146,6 @@ header {
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .profileContainer {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .profileContainer img {
-        width: 50%;
-        margin-bottom: 2rem;
-    }
-
-    .profileContainer p {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav a {
-        width: 100%;
-        color: black;
-        text-decoration: none;
     }
 
     #toggleNavButton {
